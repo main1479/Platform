@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Signup</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- =============== google fonts ================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--============== font-awesome  ==================-->
+    <script src="https://kit.fontawesome.com/bdc84e071b.js" crossorigin="anonymous"></script>
+    <!-- ================ css files =================== -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- ============ login area =================== -->
+<!-- ============================================ -->
+<section class="login pt-10 pb-8">
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="img/logo2.png" alt="platform">
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-lg-6 login-box pb-10">
+                <div class="logo__box mb-10">
+                    <img src="img/logo2.png" alt="platform"> 
+                </div>
+                <h1 class="heading sm primary">Sign in to your account</h1>
+                <p class="p__text light mb-2">Need a Platform account? <a href="#" class="primary heading bold">Request access</a></p>
+                <form class="form" role="form " action="#" method="POST">
+                
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                      <span class="icon far fa-envelope"></span>
+                    </div>
+
+                    <div class="form-group password-group">
+                      <input type="password" class="form-control password1" id="pass" name="pass" required>
+                      <!-- <i class="far pass-toggle icon fa-eye"></i> -->
+                      <i class="far icon fa-eye-slash"></i>
+
+                    </div>
+                    <div class="d-flex aic jcsb">
+                        <div class="remember-me">
+                            <input type="checkbox" checked="" name="checkbox2" id="checkbox4">
+                            <label for="checkbox4"><span></span>Remember me</label>
+                        </div>
+                        <a href="#" class="primary dib">Forget Password?</a>
+                    </div>
+                    <div class="text-center mt-4">
+                      <input type="submit" value="login" class="btn db">
+                    </div>
+                  </form>
+            </div>
+            <div class="col-lg-6 login__img align-self-stretch">
+                <img src="img/login-img.png" alt="login">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================= -->
+<!-- ========== for product details accordion ========== -->
+<!-- ============================================= -->
+<script>
+let acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+    panel.style.padding = '0' 
+    } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+    panel.style.padding = '10px 0'; 
+    }
+});
+}
+
+</script>
+
+<!-- ============================================= -->
+<!-- =========== for fixed navbar ================ -->
+
+<script>
+    window.addEventListener('scroll', function(){
+    let nav = document.querySelector('.navbar');
+    let value = Math.floor(window.pageYOffset);
+    if(value >= 50){
+        nav.classList.add('sticky')
+    }else{
+        nav.classList.remove('sticky');
+    }
+})
+</script>
+<!-- ============================================= -->
+                
+
+
+
+
+    <!-- bootstrap files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Main js file -->
+    <script src="js/select.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

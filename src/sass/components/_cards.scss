@@ -1,0 +1,169 @@
+/*----------5.14 Pricing Table Style-14----------*/
+
+
+
+.pricing__card .single_tbl.gold .tbl_header {
+    color: #fff;
+    & h3.price > span {
+        color: #fff;
+    }
+
+    & h2.type{
+        color: #fff;
+    }
+}
+.pricing__card .tbl_header h2.type {
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $color-primary;
+}
+.pricing__card .tbl_header h3.price {
+    margin: 2rem 0;
+    font-size: 4.2rem;
+    font-weight: bold;
+}
+.pricing__card .tbl_header h3.price > span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $text-light;
+}
+.pricing__card .single_tbl {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 1px 20px rgba(0,0,0, .1);
+  border-radius: 1rem;
+  padding: 3rem 2.5rem 4rem 2.5rem;
+  margin-bottom: 4rem;
+}
+.pricing__card .single_tbl .tbl_body li {
+    color: $text;
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.pricing__card .single_tbl .tbl_body li i {
+    margin-right: 1rem;
+    font-size: 13px;
+    color: $color-primary;
+}
+.pricing__card .single_tbl.gold .tbl_body li i {
+    color: #fff;
+}
+
+
+.pricing__card .single_tbl.gold {
+    background:$color-primary;
+
+    .p__text{
+        color: #fff;
+    }
+}
+.pricing__card .single_tbl.gold .tbl_body li {
+    color: #fff;
+}
+.pricing__card .single_tbl.gold .tbl_btn {
+    border-color: #fff;
+    color: #fff;
+}
+
+
+// ============================================
+// order-info =================================
+
+.order__info{
+    background: $color-primary-light;
+    padding: 4rem 3rem;
+    border-radius: 15px;
+    margin-bottom: 0 !important;
+    h3.heading{
+        font-size: 2.4rem;
+    }
+
+    .order__details{
+
+        li{
+            color: $text;
+            font-size: 14px;
+            position: relative;
+            margin-bottom: 2rem;
+
+            i{
+                margin-right: 1rem;
+                font-size: 13px;
+                color: $color-primary;
+            }
+        }
+    }
+
+    .order__payment{
+        margin-top: 1.2rem;
+        padding: 2.5rem 0 2rem 0;
+        border-top: 1px solid #DFDFDF;
+        border-bottom: 1px solid #DFDFDF;
+
+
+        .discount__box{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            h4{
+                font-weight: 400;
+                span{
+                    font-size: 1.2rem;
+                    margin-top: .5rem;
+                }
+            }
+            .amount-of-discount{
+                font-size: 2.2rem;
+            }
+        }
+
+        .total__amount{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h4{
+                font-weight: 600;
+            }
+
+            .total__amount-amount{
+                font-size: 2.2rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// ===========================================
+// faq =======================================
+.faq{
+    background: $color-primary-light;
+    padding: 4rem 3rem;
+    border-radius: 15px;
+    margin-top: 20px;
+    @media only screen and (max-width:$tab-land){
+        margin-top: 0;
+    }
+    h3.heading{
+        font-size: 2.4rem;
+    }
+
+    .question__box{
+        .question{
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .answer{
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
+
+
+
+

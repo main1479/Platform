@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Signup</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- =============== google fonts ================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--============== font-awesome  ==================-->
+    <script src="https://kit.fontawesome.com/bdc84e071b.js" crossorigin="anonymous"></script>
+    <!-- ================ css files =================== -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-flex">
+                    <a href="#" class="logo dib">
+                        <img class="img-fluid" src="img/logo2.png" alt="platform">
+                    </a>
+
+                    <ul class="main__nav"> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How it works?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="btn" href="#">Sign up for 14-day trial</a>
+                        </li>
+                    </ul>
+
+                    <div class="main__mobile-menu">
+                        <ul class="mobile__nav">
+                            <li class="nav-item toggle">
+                                <a class="nav-link" href="#">How it works?</a>
+                            </li>
+                            <li class="nav-item toggle">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item toggle">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item toggle">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                            <li class="nav-item toggle active">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                            <li class="nav-item toggle active">
+                                <a class="btn" href="#">Sign up for 14-day trial</a>
+                            </li>
+                        </ul>
+    
+                        <div class="toggle trigger">
+                            <span class="nav-icon"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+<!-- ============================================ -->
+<!-- ============ signup area =================== -->
+<!-- ============================================ -->
+<section class="signup pt-5 pb-8 mt-10">
+    <div class="container">
+        <div class="form__navigation mb-5">
+            <a href="#" class="btn">1.Account Info</a>
+            <a href="#" class="btn disabled">2. Billing Info</a>
+            <a href="#" class="btn disabled">3. email confirmation</a>
+        </div>
+
+        <div class="row d-flex">
+            <div class="col-lg-7 second">
+                <h1 class="heading sm primary">Create Your PlatForm Account</h1>
+                <p class="p__text mb-2">Some Message</p>
+                <form class="form" role="form " action="#" method="POST">
+
+                    <div class="form-group">
+                     <!--placing icon using a span element-->
+                     <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                     <span class="icon far fa-user"></span>
+                    </div>
+                
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                      <span class="icon far fa-envelope"></span>
+                    </div>
+
+                    <div class="form-group password-group">
+                      <input type="password" placeholder="**********" class="form-control" id="pass" name="pass" required>
+                      <!-- <i class="far icon fa-eye"></i> -->
+                      <i class="far icon fa-eye-slash"></i>
+                      
+                    </div>
+                    <div class="password-validation mb-2">
+                      <span class="btn btn-pass valid"><i class="fas fa-check"></i> 8 to 30 characters</span>
+                      <span class="btn btn-pass invalid"><i class="fas fa-check"></i> 1 Special character</span>
+
+                    </div>
+                    <div class="form-group password-group">
+                      <input type="password" placeholder="**********" class="form-control" id="re-pass" name="re-pass" required>
+                      <!-- <i class="icon far fa-eye"></i> -->
+                      <i class="icon far fa-eye-slash"></i>
+                    </div>
+            
+                    <div class="text-center mt-4">
+                      <input type="submit" value="SignUp" class="btn db">
+                    </div>
+                  </form>
+                  <p class="p__text mt-2">By creating your account you agree to the <a href="#" class="primary">Terms & Conditions</a></p>
+            </div>
+            <div class="col-lg-5 first align-self-stretch">
+<!--============== You will find the css code in _card.scss file  =============-->
+                <div class="order__info mb-2">
+                    <h3 class="heading bold primary mb-1">
+                        Order Summary
+                    </h3>
+                    <div class="order__select">
+                        <div class="select">
+                            <div class="selectBtn" data-type="firstOption">📢 Grow $199 billed monthly</div>
+                            <div class="selectDropdown">
+                                <div class="option" data-type="firstOption">First option</div>
+                                <div class="option" data-type="secondOption">Second option</div>
+                                <div class="option" data-type="thirdOption">Third option</div>
+                                <div class="option" data-type="forthOption">Forth option</div>
+                                <div class="option" data-type="fifthOption">Fifth option</div>
+                                <div class="option" data-type="sixthOption">Sixth option</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order__details">
+                        <button class="accordion product__info">Unlimited campaigns</button>
+                        <div class="accordion__body">
+                            <ul>
+                                <li><i class="fas fa-check"></i>Unlimited campaigns</li>
+                                <li><i class="fas fa-check"></i>Access to all games</li>
+                                <li><i class="fas fa-check"></i>email support</li>
+                                <li><i class="fas fa-check"></i>500 conversions</li>
+                                <li><i class="fas fa-check"></i>20,000 impressions</li>
+                                <li><i class="fas fa-check"></i>Analytics</li>
+                                <li><i class="fas fa-check"></i>1 domain </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order__payment">
+                        <div class="discount__box">
+                            <h4 class="heading">Discount type
+                                <span class="discount-duration db">
+                                    30% discount for the first 3 months
+                                </span>
+                            </h4>
+                            <p class="amount-of-discount primary">- $59.7</p>
+                        </div>
+                        <div class="total__amount">
+                            <h4 class="heading">Total due in 14 days</h4>
+                            <p class="total__amount-amount primary">$139.3</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="faq">
+                    <h3 class="heading bold primary mb-1">
+                        FAQ
+                    </h3>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row third">
+            <div class="col-12">
+                <div class="faq ">
+                    <h3 class="heading bold primary mb-1">
+                        FAQ
+                    </h3>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================= -->
+<!-- ========== for product details accordion ========== -->
+<!-- ============================================= -->
+<script>
+let acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+    panel.style.padding = '0' 
+    } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+    panel.style.padding = '10px 0'; 
+    }
+});
+}
+
+</script>
+
+<!-- ============================================= -->
+<!-- =========== for fixed navbar ================ -->
+
+<script>
+    window.addEventListener('scroll', function(){
+    let nav = document.querySelector('.nav');
+    let value = Math.floor(window.pageYOffset);
+    if(value >= 50){
+        nav.classList.add('sticky')
+    }else{
+        nav.classList.remove('sticky');
+    }
+})
+</script>
+<!-- ============================================= -->
+
+<!-- ===================================== -->
+<!-- for menu -->
+<script>
+    // mobile menu
+
+let toggler = document.querySelectorAll('.toggle');
+let menu = document.querySelector('.nav');
+
+toggler.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    })
+})
+</script>
+<!-- ===================================== -->
+
+
+
+    <!-- bootstrap files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Main js file -->
+    <script src="js/select.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

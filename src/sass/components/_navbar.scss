@@ -1,0 +1,235 @@
+.navbar{
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    z-index: 999;
+
+    &-nav{
+        li{
+            &:not(:last-child){
+                margin-right: 3rem;
+
+                @media only screen and (max-width: $tab-land){
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            a.nav-link{
+                &:link,
+                &:visited{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $text-light;
+                }
+            }
+        }
+    }
+
+
+    
+}
+
+nav.nav{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: #fff;
+
+    .logo{
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.nav-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__nav{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+
+    @media only screen and (max-width: $tab-land){
+        display: none;
+    }
+
+    li{
+        &:not(:last-child){
+            margin-right: 3rem;
+
+            @media only screen and (max-width: $tab-land){
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+
+        a.nav-link{
+            &:link,
+            &:visited{
+                font-size: 15px;
+                font-weight: 500;
+                color: $text-light;
+            }
+        }
+
+        &.active{
+            a.nav-link{
+                &:link,
+                &:visited{
+                    
+                    color: $text;
+                }
+            }
+        }
+    }
+}
+
+
+.nav{
+
+    .main__mobile-menu{
+        display: none;
+        @media only screen and (max-width: $tab-land){
+            display: block;
+        }
+    }
+
+
+    .mobile__nav{
+        position: fixed;
+        width: 100%;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 5;
+        background: #fff;
+        overflow: hidden;
+        transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        li{
+            margin-bottom: 2rem;
+            // transform: translateY(-50%);
+            a.nav-link{
+                &:link,
+                &:visited{
+                    font-size: 18px;
+                    color: $text;
+                    font-weight: 500;
+                }
+            }
+
+            a.btn{
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .trigger{
+        width: 40px;
+        height: 40px;
+        // background: rgba(121, 121, 121, 0.103);
+        z-index:9;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        .nav-icon{
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 3px;
+            border-radius: 30px;
+            background: transparent;
+            // margin: 10px auto 0 auto;
+            transition: all .2s;
+
+            &::after{
+                content:'';
+                width: 30px;
+                height: 3px;
+                border-radius: 30px;
+                background: $color-primary;
+                position: absolute;
+                display: inline-block;
+                left: 0;
+                bottom: -5px;
+                transition: all .3s;
+            }
+            &::before{
+                content:'';
+                width: 30px;
+                height: 3px;
+                border-radius: 30px;
+                background: $color-primary;
+                position: absolute;
+                display: inline-block;
+                left: 0;
+                top: -5px;
+                transition: all .3s;
+            }
+        }
+    }
+
+
+    &.active{
+        .mobile__nav{
+            height: 100vh;
+            transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            padding-top: 20%;
+        }
+
+
+        .trigger{
+            .nav-icon{
+                
+    
+    
+                &::after{
+                    transition: all .3s;
+                    top: 0;
+                    transform: rotate(-135deg);
+                }
+                &::before{
+                    transition: all .3s;
+                    top: 0;
+                    transform: rotate(135deg);
+                }
+            }
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

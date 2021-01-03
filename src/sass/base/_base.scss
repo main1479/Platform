@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    @media only screen and (max-width: $laptop-land){
+        font-size: 57%;
+    }
+    @media only screen and (max-width: $laptop-port){
+        font-size: 50%;
+    }
+}
+
+body{
+    font-family: 'Archivo', sans-serif;
+    font-size: 15px;
+    color: $text; 
+    line-height: 1.6;
+    overflow-x: hidden !important;
+}
+
+::selection{
+    background: $text;
+    color: #fff;
+}
+.sticky{
+    box-shadow: 0 0 20px rgba($color-primary, .2);
+}
+
+.container{
+    &.sm{
+        max-width: 60rem !important;
+    }
+}
+
+// =======================================
+// for small pages image =================
+
+.icon-img{
+    max-width: 150px;
+    margin: 0 auto 3rem auto;
+    @media only screen and (max-width: $mbl-land){
+        max-width: 12rem;
+        margin: 0 auto 3rem auto;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+// =======================================
+// for small pages form =================
+.form.sm-form{
+    margin: 0 auto;
+    max-width: 36rem !important;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

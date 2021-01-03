@@ -1,0 +1,142 @@
+.heading{
+    color: $text;
+
+    &.bold{
+        font-weight: bold;
+    }
+}
+
+h1.heading{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    @media only screen and (max-width: $tab-port){
+        font-size: 3.6rem;
+        br{
+            display: none;
+        }
+    }
+
+    &.primary{
+        color: $color-primary;
+    }
+    &.sm{
+        font-size: 2.6rem;
+        font-weight: 900;
+    }
+}
+
+h2.heading{
+    font-size: 5.5rem;
+    @media only screen and (max-width: $tab-port){
+        font-size: 4rem;
+        br{
+            display: none;
+        }
+    }
+    // @media only screen and (max-width: $mbl-port){
+    //     font-size: 3.5rem;
+    // }
+
+    &.sm{
+        font-size: 2.6rem;
+        font-weight: 900;
+    }
+
+    &.big{ 
+        font-size: 7.5rem;
+        @media only screen and (max-width: $tab-port){
+            font-size: 5.5rem;
+            br{
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: $mbl-port){
+            font-size: 5rem;
+        }
+    }
+
+    &.mid{
+        font-size: 6.1rem;
+        @media only screen and (max-width: $tab-port){
+            font-size: 5rem;
+            br{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: $mbl-port){
+            font-size: 4rem;
+        }
+    }
+    &.medium{
+        font-size: 4.6rem;
+        @media only screen and (max-width: $tab-port){
+            font-size: 3.5rem;
+            br{
+                display: none;
+            }
+        }
+    }
+
+    &.small{
+        font-size: 4rem;
+        @media only screen and (max-width: $tab-port){
+            font-size: 3.3rem;
+            br{
+                display: none;
+            }
+        }
+    }
+}
+
+h3.heading{
+    font-size: 3.2rem;
+    // color: #fff;
+
+    @media only screen and (max-width: $tab-port){
+        font-size: 2.7rem;
+        br{
+            display: none;
+        }
+    }
+
+}
+
+h4.heading{
+    font-size: 1.8rem;
+}
+
+
+.p__text{
+    font-size: 1.6rem;
+
+    @media only screen and (max-width:$mbl-port){
+        br{
+            display: none;
+        }
+    }
+    
+    .heading{
+        font-weight: bold;
+    }
+
+    &.sm{
+        font-size: 1.2rem;
+    }
+
+
+
+}
+.white{
+    color: #fff;
+}
+.light{
+    color:$text-light;
+}
+.primary{
+    color: $color-primary;
+}
+
+.ttc{text-transform: capitalize;}
+.ttu{text-transform: uppercase;}

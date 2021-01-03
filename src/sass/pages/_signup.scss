@@ -1,0 +1,96 @@
+
+
+
+
+
+
+
+.billing-info{
+    .form{
+
+        .form-group{
+            input{
+                padding: 2rem;
+            }
+        }
+    }
+
+    .label{
+        font-size: 14px;
+        margin: 0 2rem;
+        align-self: start;
+        cursor: pointer;
+        user-select: none;
+        margin-top: .5rem;
+    }
+
+    .payment__method{
+
+            input{
+                display: none;
+                &:checked + label{
+                    background:$color-primary;
+                    color: #fff;
+                }
+            }
+            label{
+                display: block;
+                background: #F9F9F9;
+                padding: 1rem;
+                font-weight: 500;
+                font-size: 18px;
+                border-radius: 4px;
+                border: 1px solid #707070;
+                cursor: pointer;
+                i{
+                    margin-right: 1rem;
+                    font-size: 2rem;
+                }
+                
+            }
+            
+    } 
+
+    
+        
+
+}
+
+.third{
+    display: none;
+}
+
+@media only screen and (max-width: $tab-land){
+    .d-flex{
+        display: flex ;
+        .second{
+            order: 2 ;
+            background: $color-primary-light;
+            padding: 4rem 3rem;
+            border-radius: 1.5rem;
+            margin: 2rem;
+        }
+        .first{
+            order: 1;
+        }
+
+        .faq{
+            display: none;
+        }
+    }
+
+    .third{
+        display: block;
+    }
+    }
+
+
+    @media only screen and (max-width: $mbl-land){
+        .form__navigation{
+            a.btn{
+                padding: .7rem 1rem;
+                font-size: 12px;
+                margin: 1rem 0;
+            }
+        }
+    }

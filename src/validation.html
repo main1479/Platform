@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Signup</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- =============== google fonts ================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--============== font-awesome  ==================-->
+    <script src="https://kit.fontawesome.com/bdc84e071b.js" crossorigin="anonymous"></script>
+    <!-- ================ css files =================== -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- ============ billing info area =================== -->
+<!-- ============================================ -->
+<section class="billing-info pt-5 pb-8">
+    <div class="container">
+        <div class="form__navigation mb-5">
+            <a href="#" class="btn disabled">1.Account Info</a>
+            <a href="#" class="btn">2. Billing Info</a>
+            <a href="#" class="btn disabled">3. email confirmation</a>
+        </div>
+
+        <div class="row d-flex">
+            <div class="col-lg-7 second">
+                <h1 class="heading sm primary">Create Your PlatForm Account</h1>
+                <p class="p__text mb-2">Some Message</p>
+                
+
+                <form class="form signup-2" action="#" method="POST">
+                    <div class="form-group error">
+                      <input type="text" class="form-control" name="Company Name" placeholder="Company Name" required>
+                      <span class="error-message">Error message with descriptions</span>
+                    </div>
+                
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Company Registration Number" placeholder="Company Registration Number" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Address 1" placeholder="Address 1" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Address 2" placeholder="Address 2">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Address 3" placeholder="Address 3">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="City" placeholder="City" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="Postcode" placeholder="Postcode" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="State" placeholder="State" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="niceCountryInputSelector"  data-selectedcountry="MY" data-showspecial="false" data-showflags="true" data-i18nall="All selected"
+                                    data-i18nnofilter="No selection" data-i18nfilter="Filter" data-onchangecallback="onChangeCallback"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex">
+                            <ul class="switch_common switch_style2 d_inline">
+                                <li class="md_switch">
+                                    <input class="switch" id="switch6" type="checkbox">
+                                    <label for="switch6"></label>
+                                </li>
+                            </ul>
+                            <label class="label coupon-label" for="switch6">I have a coupon code</label>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex pb-2">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="coupon code" placeholder="Coupon Code" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="btn">Check if valid</a>
+                        </div>
+                    </div>
+
+                    <p class="p__text">Choose a way to pay</p>
+
+                    <div class="payment__method">
+                        <div class="payment__method-card">
+                            <input type="radio" checked="" name="payment" id="payment-card">
+                            <label for="payment-card"><i class="far fa-credit-card"></i> Card</label>
+                        </div>
+                        <div class="payment__method-paypal">
+                            <input type="radio" checked="" name="payment" id="payment-paypal">
+                            <label for="payment-paypal"><i class="fab fa-paypal"></i> Paypal</label>
+                        </div>
+                    </div>
+                    
+
+                    <div class="tac mt-2">
+                        <a href="#">
+                            <img src="img/Bitmap.png" alt="Bitmap">
+                        </a>
+                    </div>
+            
+                    <div class="text-center mt-4">
+                      <input type="submit" value="Start your 14-day trial" class="btn db">
+                    </div>
+                
+                </form>
+
+                <p class="p__text mt-2">By creating your account you agree to the <a href="#" class="primary">Terms & Conditions</a></p>
+            
+            </div>
+            <div class="col-lg-5 first align-self-stretch">
+<!--============== You will find the css code in _card.scss file  =============-->
+                <div class="order__info mb-2">
+                    <h3 class="heading bold primary mb-1">
+                        Order Summary
+                    </h3>
+                    <div class="order__select">
+                        <div class="select">
+                            <div class="selectBtn" data-type="firstOption">📢 Grow $199 billed monthly</div>
+                            <div class="selectDropdown">
+                                <div class="option" data-type="firstOption">First option</div>
+                                <div class="option" data-type="secondOption">Second option</div>
+                                <div class="option" data-type="thirdOption">Third option</div>
+                                <div class="option" data-type="forthOption">Forth option</div>
+                                <div class="option" data-type="fifthOption">Fifth option</div>
+                                <div class="option" data-type="sixthOption">Sixth option</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order__details">
+                        <button class="accordion product__info">Unlimited campaigns</button>
+                        <div class="accordion__body">
+                            <ul>
+                                <li><i class="fas fa-check"></i>Unlimited campaigns</li>
+                                <li><i class="fas fa-check"></i>Access to all games</li>
+                                <li><i class="fas fa-check"></i>email support</li>
+                                <li><i class="fas fa-check"></i>500 conversions</li>
+                                <li><i class="fas fa-check"></i>20,000 impressions</li>
+                                <li><i class="fas fa-check"></i>Analytics</li>
+                                <li><i class="fas fa-check"></i>1 domain </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order__payment">
+                        <div class="discount__box">
+                            <h4 class="heading">Discount type
+                                <span class="discount-duration db">
+                                    30% discount for the first 3 months
+                                </span>
+                            </h4>
+                            <p class="amount-of-discount primary">- $59.7</p>
+                        </div>
+                        <div class="total__amount">
+                            <h4 class="heading">Total due in 14 days</h4>
+                            <p class="total__amount-amount primary">$139.3</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="faq">
+                    <h3 class="heading bold primary mb-1">
+                        FAQ
+                    </h3>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row third">
+            <div class="col-12">
+                <div class="faq ">
+                    <h3 class="heading bold primary mb-1">
+                        FAQ
+                    </h3>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                    <div class="question__box">
+                        <p class="question">Will I be billed during the trial?</p>
+                        <p class="answer">
+                            Kind said evening make. Divide good third saying. Subdue darkness created fill moveth bring green yielding rule, whose called Morning beginning was. It our years sea place fly saw
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================= -->
+<!-- ========== for product details accordion ========== -->
+<!-- ============================================= -->
+<script>
+let acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        panel.style.padding = '0' 
+    } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.padding = '10px 0'; 
+    }
+});
+}
+
+</script>
+
+
+            
+    <!-- bootstrap files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/country-select.js"></script>
+
+    <!-- Main js file -->
+    <script src="js/select.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

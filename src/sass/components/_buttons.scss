@@ -1,0 +1,312 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+        text-align: center;
+        cursor: pointer;
+        display: inline-block;
+        background: $color-primary;
+        padding: 1rem 2.5rem;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 10rem;
+        color: #fff !important;
+        transition: all .3s;
+
+        &:hover{
+            box-shadow: 0 5px 20px rgba($text, .1);
+            transform: translateY(-3px);
+            color: #fff;
+        } 
+
+        &.db{
+            display: block !important;
+            width: 100%;
+            padding: 1.5rem 3rem;
+        }
+
+        &.btn-white{
+            background: #fff;
+            color: $text !important;
+        }
+
+        &.shadow{
+            box-shadow: 0 1px 20px rgba(0,0,0, .1);
+        }
+
+        &.disabled{
+            background: #F4F6FF;
+            color: #8F9ACB !important;
+            margin: 0 5px;
+        }
+
+        &.btn-bg-none{
+            background: none;
+            color: $color-primary !important;
+            transition: 0;
+            font-weight: 400;
+            display: inline-block;
+            padding: 0;
+            &:hover{
+                box-shadow: none;
+                transform: translateY(0);
+                font-weight: 400;
+            }
+        }
+    }
+
+    &.big{
+        max-width: 36rem;
+        margin: 0 auto;
+    }
+
+
+    &.btn-pass{
+        border-radius: 5px;
+        margin-right: 10px;
+        padding: 10px;
+        &:hover{
+            transform: translateY(0);
+            box-shadow: none;
+        }
+        
+    }
+    &.valid{
+        color: $color-primary !important;
+        background: $color-primary-light;
+        i{
+            margin-right: 5px;
+        }
+    }
+    &.invalid{
+        color: $text-light !important;
+        background: $color-primary-light;
+        i{
+            display: none;
+        }
+    }
+}
+
+// =============================================
+// toggle button  ==============================
+
+.package-duration{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    // transform: translateX(6rem);
+    
+    // @media only screen and (max-width: $mbl-land){
+    //     // transform: translateX(0);
+        
+    // }
+    
+    .label{
+        font-size: 1.8rem;
+        margin: 0 2rem;
+        align-self: start;
+        cursor: pointer;
+        user-select: none;
+        &.annually{
+            color: $text-light;
+        }
+    }
+
+    
+
+
+
+    
+}
+.range-btn{
+    flex: 0 0 100%;
+}
+
+
+// ========================================
+// toggle button ==========================
+    /*-----------------------------------input switch style--------------------------------*/
+    .switch_common>li{
+        margin-right: 30px;
+        vertical-align: middle;
+    }
+    .switch_common>li:last-child{
+        margin-right: 0px;
+    }
+    .switch_common .switch {
+        visibility: hidden;
+        margin-left: -9999px;
+        position: absolute;
+    }
+    .switch_common label{
+        margin-bottom: 0;
+    }
+    .switch_common .switch + label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        border-radius: 80px;
+        border: 1px solid #ddd;
+        user-select: none;
+    }
+    .switch_common .switch + label:before {
+        right: 0px;
+        background: #E5E5E5;
+        border-radius: 75px;
+    }
+    .switch_common .switch + label:after {
+        background-color: #fff;
+        border-radius: 100%;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+    .switch_common .switch + label:before,
+    .switch_common .switch + label:after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+    .switch_common .switch:checked + label:before {
+        background-color: $color-primary;
+    }
+    .switch_common .switch:checked + label {
+        border-color: $color-primary;
+    }
+
+
+    /*----------------------------switch style-2 common------------------------------*/
+        .switch_style2 .switch + label {
+            border-width: 2px;
+        }
+        .switch_style2 .switch:checked + label {
+            border-color: $color-primary;
+        }
+        
+        .switch_style2 .switch + label::before {
+            background: #E5E5E5;
+        }
+        .switch_style2 .switch:checked + label:before {
+            background-color: transparent;
+        }
+        
+        .switch_style2 .switch + label::after {
+            background-color: $color-primary;
+            box-shadow: none;
+        }
+        .switch_style2 .switch:checked + label::after {
+            background-color: $color-primary;
+        }
+
+
+
+    /*-------------medium switch--------------*/
+    .md_switch .switch + label {
+        height: 30px;
+        width: 60px;
+    }
+    .md_switch .switch + label:after {
+        width: 28px;
+        height: 28px;
+    }
+    .md_switch .switch:checked + label:after {
+        margin-left: 30px;
+    }
+
+    /*----------switch style-2 md switch------------*/
+.switch_style2 .md_switch .switch + label::after {
+    height: 20px;
+    left: 3px;
+    top: 3px;
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------checkbox common style----------------*/
+ .remember-me label {
+    color: #8F9ACB ;
+    font-size: 15px;
+    // margin-bottom: 12px;
+    cursor: pointer;
+    font-weight: 400;
+    user-select: none;
+}
+
+ .remember-me input[type="checkbox"] {
+    display: none;
+}
+
+ .remember-me input[type="checkbox"]+label span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: -1px 15px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #a9b4c6;
+    position: relative;
+}
+
+ .remember-me input[type="checkbox"]+label span:before {
+    color: #fff;
+    content: "\f00c";
+    font-family: "FontAwesome";
+    font-size: 8px;
+    position: absolute;
+    text-align: center;
+    left: 1.5px;
+    top: -0px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+ .remember-me input[type="checkbox"]:checked+label span {
+    background: #2079ff;
+    border-color: #2079ff;
+}
+
+ .remember-me input[type="checkbox"]:checked+label span:before {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+ .remember-me input[type="checkbox"]+label span,
+ .remember-me input[type="checkbox"]:checked+label span {
+    -webkit-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+}
+
+.remember-me input[type="checkbox"] + label span {
+    border-radius: 3px;
+  }
+
+  .remember-me input[type="checkbox"]:checked+label{
+      color: $color-primary;
+  }

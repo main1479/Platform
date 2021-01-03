@@ -1,0 +1,23 @@
+{
+  "name": "porject1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": " node-sass src/sass/main.scss src/css/style.css -w",
+    "popper-js": "concat -o src/js/popper.js node_modules/@popperjs/core/dist/umd/popper.min.js",
+    "start": "npm-run-all popper-js css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.4.4",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5"
+  }
+}

@@ -1,0 +1,51 @@
+.accordion {
+    cursor: pointer;
+    position: relative;
+    height: 3rem;
+    line-height:3rem;
+    padding: 0px 0px;
+    display: block;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 5px;
+    z-index: 2;
+    text-align: left;
+    border: none;
+    outline: none;
+    background: none;
+    transition: 0.3s;
+    position: relative;
+
+    &:focus{
+        outline: 0;
+    }
+  }
+
+  .accordion::after{
+    content:'\f0fe';
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 100;
+    transition: all .3s;
+    color: $color-primary;
+    font-family: "Font Awesome 5 Free";
+    // border: 1px solid $color-primary;
+    line-height: 15px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+.accordion.active::after{
+  content:'\f146';
+}
+  
+.accordion__body {
+max-height: 0;
+overflow: hidden;
+transition: all 0.3s ease-out;
+// border-bottom: 1px solid #DFDFDF;
+}

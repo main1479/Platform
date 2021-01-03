@@ -1,0 +1,180 @@
+.niceCountryInputMenu {
+    background: white !important;
+    color: #8F9ACB !important;
+    // border: 1px solid #a8a8a8;
+    cursor: pointer;
+    margin-top: -5px;
+}
+.niceCountryInputMenuDefaultText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    font-size: 1.4rem;
+    color: #8F9ACB;
+    border: 1px solid #dfdfdf;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    z-index: 4;
+    user-select: none;
+
+    a{
+        span{
+            color: #8F9ACB !important;
+            font-size: 1.4rem;
+        }
+    }
+}
+.niceCountryInputMenuDefaultText a:hover {
+    text-decoration: none;
+}
+.niceCountryInputMenu a {
+    color: black !important;
+}
+.niceCountryInputMenuDropdown {
+    /*border-left: 1px solid #a8a8a8;*/
+    height: 25px;
+    width: 21px;
+    float: right;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    right: 0;
+    color: #8F9ACB;
+    z-index: 3;
+}
+.niceCountryInputMenuDropdownContent {
+    border: 1px solid #a8a8a8;
+    border-top: 0;
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #fff;
+    position: relative;
+    z-index: 3;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+      }
+       
+      &::-webkit-scrollbar-track {
+        background: $color-primary-light;
+      }
+       
+      &::-webkit-scrollbar-thumb {
+        background: $color-primary;
+        border-radius: 30px;
+      }
+}
+.niceCountryInputMenuDropdownContent a {
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    width: 100%;
+    color: #8F9ACB !important;
+    overflow: hidden;
+    text-decoration: none;
+    /*
+    font-family: Arial;
+    font-size: 12px;
+    */
+}
+.niceCountryInputMenuDropdownContent a:hover {
+    background-color: #8f9acbb7 !important;
+    color: white !important;
+    text-decoration: none;
+}
+.niceCountryInputMenuFilter {
+    border: 1px solid #a8a8a8;
+    border-top: 0;
+    border-bottom: 0;
+    display: none;
+}
+.niceCountryInputMenuFilter input {
+    width: 100%;
+    width: calc(100% - 10px);
+    margin: 5px;
+    padding: 5px;
+    display: none;
+}
+.niceCountryInputMenuCountryFlag {
+    border: 1px solid #d3d3d3;
+    width: 18px;
+    height: 13px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.niceCountryInputMenuCountryNoFlag {
+    display: inline-block;
+    border: 1px solid black;
+    background: white;
+    color: #8F9ACB;
+    line-height: 15px;
+    text-align: center;
+    width: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.niceCountryInputMenuDropdownContent a {
+	height: auto; 
+	line-height: auto; 
+	display: block;
+	width: 100%;
+	color: #8F9ACB !important;
+	overflow: hidden;
+	text-decoration: none;
+	padding: 1.5rem;
+}
+
+.niceCountryInputMenuDropdownContent {
+	width: 100%;
+	padding-top: 25px;
+}
+
+.niceCountryInputMenuDropdown {
+	background: var(--bg1);
+    padding:1rem 2rem;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    span{
+        display: none;
+    }
+
+    &::after{
+        content: "";
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+    border-right: 2px solid #8F9ACB;
+    border-bottom: 2px solid #8F9ACB;
+    transition: 0.2s ease;
+    }
+}
+
+.niceCountryInputMenu {
+	display: flex;
+	align-items: center;
+}
+
+
+
+
+// 
